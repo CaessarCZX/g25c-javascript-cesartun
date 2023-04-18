@@ -1,0 +1,3 @@
+1.Cual es la diferencia entre un tipo de dato primitivo y conplejo.
+2.Como se define un objeto y un arrgleo en js y para que sirve cada uno.
+3.Que es let y que es const en javscript.
