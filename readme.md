@@ -1,6 +1,5 @@
 # g25c-javascript-cesartun
 This is my own repository  about kata javascript  by DEV.F
-
 # JavaScript
 
 Este documento es una **sintesis de la kata** (clases, campus, tareas y proyectos) **más temas extra** (estrechamente relacionados) para brindar la **posibilidad** al estudiante **de ampliar** sus **conocimientos**. Para su mejor aprovechamiento se recomienda **leerlo como guía** y **ampliar sus notas** con base en **investigación/autoestudio** y **ejercicios** subirlo a su propio repositorio.
@@ -62,4 +61,3 @@ working...
 ### Glosario
 
 El glosario se encuentra ubicado en el siguiente [repo](https://github.com/montoyaguzman/gloasario-techie)
-
