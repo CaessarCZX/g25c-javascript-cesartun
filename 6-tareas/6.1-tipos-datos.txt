@@ -1,7 +1,7 @@
 1.Cual es la diferencia entre un tipo de dato primitivo y complejo.
 
 ## Datos primitivos
-- Son satos que no son un objeto por lo tanto no contienen metodos. Representan a los tipos de datos más básicos en la programación. En javascript existen 6 tipos
+- Son datos que no son un objeto por lo tanto no contienen metodos. Representan a los tipos de datos más básicos en la programación. En javascript existen 6 tipos
 	- String
 	- number
 	- bigint
@@ -22,6 +22,41 @@ console.log(bar); // baz
 // La asignación le da al primitivo un nuevo valor (no lo muta)
 bar = bar.toUpperCase(); // BAZ
 ```
+## Datos complejos
+- Son un topo de datos que puede contener varios valores o elementos.
+	-Arrays
+	-Objects
+	-Functions
+	-Class
+**Para darnos una idea**
+Los arrays representan una estructura de datos que puede contener varios valores en una sola variable. Estos valores pueden ser de cualquier tipo de datos, como números, cadenas de texto, objetos u otros arrays.
+```
+let miArray = [1, 2, "tres", {cuatro: 4}, [5, 6]];
+```
+Los objetos tambíen son una estructura de datos que puede contener pares de clave-valor. Cada clave es una cadena de texto que actúa como identificador, y cada valor puede ser de cualquier tipo de datos, como números, cadenas de texto, otros objetos o funciones.
+```
+let miObjeto = {nombre: "Juan", edad: 30, direccion: {calle: "Calle Falsa", numero: 123}};
+```
+Las fuciones o métodos que representan una estructura de datos que permite definir un conjunto de instrucciones que se pueden llamar en cualquier momento. Las funciones pueden aceptar parámetros como entrada y pueden devolver valores como salida.
+```
+function sumar(a, b) {
+  return a + b;
+}
+```
+Una clase es una plantilla para crear objetos que comparten un conjunto de propiedades y métodos. Las clases se pueden utilizar para crear múltiples objetos con las mismas características.
+```
+class Persona {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+  saludar() {
+    console.log(`Hola, mi nombre es ${this.nombre}`);
+  }
+}
 
+let persona1 = new Persona("Ana", 25);
+let persona2 = new Persona("Luis", 30);
+```
 2.Como se define un objeto y un arrgleo en js y para que sirve cada uno.
 3.Que es let y que es const en javscript.
