@@ -26,8 +26,8 @@ console.log(celular.hasStock);
 // imprimir la segunda calificacion
 console.log(data[3].qualifications[1]);
 // imprimir la penultima posicion del array de data
-console.log(data[4]);
+console.log(data[data.length - 2]);
 // imprimir la marca del celular
 console.log(celular.brand);
 // imprimir el ultimo comentario del video
-console.log(video.comments[2]);
+console.log(video.comments[video.comments.length - 1]);
