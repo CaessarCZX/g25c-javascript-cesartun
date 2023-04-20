@@ -18,7 +18,9 @@ var celular = {
 var data = [45, 67, 12, { qualifications: [10, 9 , 0] }, false, 23.77 ];
 
 // imprimir el comentario de "a mi no me gusto"
-console.log(video.comments[1]);
+console.log('video.comments[1]: ' + video.comments[1]);
+console.log('video.comments[1]:', video.comments[1]);
+console.log(`video.comments[1]: ${video.comments[1]}`);
 // imprimir la direccion de la compañia de la var celular
 console.log(celular.company.address.street);
 // imprimir si hay piezas disponibles de celular
