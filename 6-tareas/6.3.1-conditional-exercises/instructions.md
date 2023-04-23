@@ -1,5 +1,5 @@
 # Ejercicios con condicionales en JavaScript
-Estos son algunos ejercicios propuestos para iniciar la practica de las condicionales `if`, `else`, en este lenguaje
+Estos son algunos ejercicios propuestos para iniciar la practica de las condicionales `if`, `else` o `switch` en este lenguaje
 de programación. :nerd_face:
 
 1. Representar el diagrama de flujo 6.3.1 que esta en `./assets` con js y condicionales.
