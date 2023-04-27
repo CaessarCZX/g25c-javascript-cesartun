@@ -1,3 +1,18 @@
 .mdl-layout__header {
     background-color: black;
 }
+
+.business-logo {
+    display: block;
+}
+
+    .business-logo img {
+        object-fit: none;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        
+        
+    }
+
+    
