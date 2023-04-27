@@ -12,3 +12,7 @@ const nuevoParrafo = document.createElement('p');
 nuevoParrafo.setAttribute('id', 'miNuevoParrafo');
 nuevoParrafo.innerHTML = 'Este es mi parrafo nuevo';
 document.body.appendChild(nuevoParrafo);
+
+// Eliminar un elemento de nuestra pagina
+const parrafoAEliminar = document.getElementById('#parrafoAEliminar');
+parrafoAEliminar.node
