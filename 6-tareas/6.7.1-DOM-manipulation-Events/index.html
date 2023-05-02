@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DOM Manipulation/Events</title>
+</head>
+
+<body>
+    <section class="For-Manipulation">
+        <article class="Manipulation-Wrapper">
+            <div class="title-section title-section--layout">
+                <h2>Manipulacion de DOM</h2>
+            </div>
+            <div class="area-button area-button--layout">
+                <input type="checkbox" id="BG-action">
+                <label for="BG-action" class="Toggle-slider"></label>
+            </div>
+            <div class="area-form area-form--layout">
+                <div class="form-container">
+                    <div class="form__header">
+                        <h3>Creador de tareas</h3>
+                    </div>
+                    <form id="Posts-crator">
+                        <input type="text" id="entries" placeholder="Ingresa una tarea">
+                        <input type="submit" class="bt-form" value="Post">
+                    </form>
+                </div>
+                <div class="Posts-entries-area">
+                    <div class="Post-entries__header">
+                        <h3>Mis tareas...</h3>
+                    </div>
+                    <ul id="Posts-entries"></ul>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section></section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
