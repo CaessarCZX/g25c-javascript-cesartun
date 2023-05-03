@@ -21,15 +21,14 @@ h3 {
 .For-Manipulation {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 1rem;
 }
 
 .Manipulation-Wrapper {
     display: grid;
-    /* width: 100%; */
-    /* grid-template-columns: minmax(50px, 250px) minmax(auto, 500px) auto; */
-    grid-template-columns: minmax(50px, 250px) repeat(2, minmax(100px, 1fr));
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: minmax(50px, 250px) repeat(2, minmax(100px, 700px));
+    grid-template-rows: auto 3rem repeat(2, auto);
     gap: 1rem;
     grid-template-areas: 
     'header-s header-s area-a'
@@ -54,6 +53,7 @@ h3 {
 
     .area-button--layout {
         grid-area: button;
+        align-self: center;
     }
     
 .Toggle-slider {
@@ -108,8 +108,9 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-width: 500px;
-    width: 420px;
+    max-width: 800px;
+    flex-grow: 1;
+    
 }
 
 .form__header {
@@ -122,14 +123,17 @@ h3 {
     color: #fff;
 }
 
-#Posts-crator {
+#Posts-creator {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
     border: solid 2px #787878;
     border-radius: 0 0 7px 7px;
     border-top: 0;
     padding: 1.2rem;
+    flex-grow: 1;
+    max-height: 224px;
 }
 
 #entries {
@@ -139,6 +143,7 @@ h3 {
     padding: 0.7rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     background-color: transparent;
+    flex-grow: 1;
 }
 
 #entries::placeholder {
@@ -177,8 +182,9 @@ h3 {
 .Posts-entries-area {
     display: flex;
     flex-wrap: wrap;
-    max-width: 700px;
-    width: 500px;
+    flex-direction: column;
+    width: 800px;
+    min-width: 226px;
     border: solid 2px #787878;
     border-radius: 7px;
 }
@@ -192,6 +198,130 @@ h3 {
 
 #Posts-entries {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: auto;
+    padding: 0.7rem;
     min-height: 4rem;
     max-height: 500px;
+    list-style-type: none;
+}
+
+    #Posts-entries li {
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
+        height: 200px;
+        border: solid 2px #787878;
+        border-radius: 4px;
+        padding: 1rem;
+        font-weight: lighter;
+        transition: height 0.3s ease-out;
+    }
+
+        #Posts-entries li.Action-li {
+            height: 250px;
+        }
+
+    #Posts-entries li p {
+        overflow: hidden;
+        hyphens: auto;
+        word-wrap: break-word;
+    }
+        
+        #Posts-entries li.Action-li p:hover {
+            overflow: auto;
+        }
+    
+
+    #Posts-entries li span {
+        padding-top: 0.5rem;
+    }
+    
+    #Posts-entries li span button {
+        visibility: hidden;
+        opacity: 0;
+        width: 100%;
+        border: 0;
+        background-color: #e02b9b;
+        padding: 0.5rem;
+        border-radius: 7px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: opacity 0.7s ease-out;
+    }
+
+        #Posts-entries li.Action-li button {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        #Posts-entries li.Action-li button:active {
+            transform: scale(0.95);
+        }
+
+.area-letters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    border: solid 2px #787878;
+    border-radius: 7px;
+}
+
+.area-letters--layout {
+    grid-area: text-act;
+}
+
+.area-letters__header {
+    background-color: #787878;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.area-letters__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area-letters__button {
+    display: flex;
+    padding: 1rem;
+}
+
+.area-letters__button button {
+    background-color: #2fb7e9;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    color: #fff;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 0.7rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.4s ease-out;
+}
+
+    .area-letters__button button:hover {
+        background-color: #e02b9b;
+    }
+
+.area-letters__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.area-letters__content span {
+    font-size: 2rem;
+    font-weight: 700;
+    transition: font-size 0.3s ease-in;
 }
