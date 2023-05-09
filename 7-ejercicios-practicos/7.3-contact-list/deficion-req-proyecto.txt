@@ -1,0 +1,7 @@
+Los requerimientos del proyecto:
+
+-La realizacion de una pagina web que muestre una agenda de contactos.
+-La agenda debe tener una medida definida por donde solo se mostraran n contactos por lo que sera necesario poner un scroll en caso de que  
+de contacto disponibles.
+-La agenda debe tener un input en donde se pueda filtrar los nombres de los contactos disponibles.
+-Cada contacto debe de tener una espacio para fotografia, nombre y numero de telefono.
